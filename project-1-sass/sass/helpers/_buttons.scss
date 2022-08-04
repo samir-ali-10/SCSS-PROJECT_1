@@ -1,0 +1,25 @@
+.main-button {
+    background-color: $mainColor;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 15px ;
+}
+
+.secondary-button {
+    background-image: $scndryColor;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.another-button {
+    background-image: linear-gradient(rgb(193, 0, 193), rgb(253, 112, 135));
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    height: fit-content;
+}

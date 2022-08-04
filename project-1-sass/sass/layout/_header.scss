@@ -1,0 +1,17 @@
+.header {
+    text-align: center;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .logo {
+            color: $mainColor;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}

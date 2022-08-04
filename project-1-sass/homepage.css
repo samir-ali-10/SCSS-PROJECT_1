@@ -1,0 +1,220 @@
+.header {
+  text-align: center;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.header .container .logo {
+  color: rgb(37, 0, 106);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(249, 253, 255);
+}
+
+.landing {
+  position: relative;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.landing .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.landing .container .content {
+  margin-top: 50px;
+  width: 50%;
+}
+.landing .container .content h1 {
+  color: rgb(37, 0, 106);
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+.landing .container .content p {
+  color: #777;
+}
+.landing .container .image img {
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
+  max-width: 100%;
+}
+
+.services {
+  position: relative;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.services .container .cont {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.services .container .cont .boxo {
+  padding: 15px;
+  border-radius: 7px;
+  background-color: white;
+  -webkit-box-shadow: 7px 7px 18px #888888;
+          box-shadow: 7px 7px 18px #888888;
+  position: relative;
+}
+.services .container .cont .boxo h4 {
+  color: rgb(37, 0, 106);
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.services .container .cont .boxo p {
+  color: #777;
+}
+.services .container .cont .boxo .start {
+  color: rgb(211, 0, 151);
+  font-weight: bold;
+  cursor: pointer;
+}
+.services .container .cont .boxo::before {
+  content: "\f09a";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: -17px;
+  left: 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 118, 118)), to(rgb(255, 121, 255)));
+  background-image: linear-gradient(rgb(255, 118, 118), rgb(255, 121, 255));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.services .container .cont .special {
+  text-align: start;
+  font-weight: bold;
+  padding: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 118, 118)), to(rgb(255, 121, 255)));
+  background-image: linear-gradient(rgb(255, 118, 118), rgb(255, 121, 255));
+  border-radius: 7px;
+}
+.services .container .cont .special h4 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  background-color: rgb(37, 0, 106);
+  padding: 15px;
+}
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .container .logo {
+  padding-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .landing .container .image img {
+    position: absolute;
+    top: 86px;
+    width: 350px;
+    right: 10px;
+  }
+
+  .secondary-button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 768px) {
+  .landing .container .image img {
+    display: none;
+  }
+
+  .landing .container .content {
+    width: 100%;
+  }
+}
+.main-button {
+  background-color: rgb(37, 0, 106);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 15px;
+}
+
+.secondary-button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 118, 118)), to(rgb(255, 121, 255)));
+  background-image: linear-gradient(rgb(255, 118, 118), rgb(255, 121, 255));
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+}
+
+.another-button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(193, 0, 193)), to(rgb(253, 112, 135)));
+  background-image: linear-gradient(rgb(193, 0, 193), rgb(253, 112, 135));
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+/*# sourceMappingURL=homepage.css.map */

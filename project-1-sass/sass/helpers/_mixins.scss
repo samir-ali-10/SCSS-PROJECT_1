@@ -1,0 +1,17 @@
+@mixin list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+$position: "top";
+
+@mixin arrow($position) {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-color: red;
+}
